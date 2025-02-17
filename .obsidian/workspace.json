@@ -30,9 +30,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f1fdab0d9cc9887c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Vscode-vim.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "394a1515ce9a85e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "algorithm-template/数学/快速傅里叶变换(FFT).md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "第三次培训.md",
+                "file": "algorithm-template/数学/快速傅里叶变换(FFT).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "第三次培训.md",
+                "file": "algorithm-template/数学/快速傅里叶变换(FFT).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "第三次培训.md"
+                "file": "algorithm-template/数学/快速傅里叶变换(FFT).md"
               }
             }
           }
@@ -159,33 +183,42 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3431797581d0d5f4",
+  "active": "394a1515ce9a85e7",
   "lastOpenFiles": [
-    "2024-01-25.md",
-    "第三次培训.md",
-    "燕骏培训.md",
-    "第二次培训.md",
-    "c语言公开课.md",
-    "手写一个vector容器.md",
-    "Untitled.canvas",
-    "modern effective c++/Item25 使用move.md",
-    "modern effective c++/Item29 移动操作的缺点.md",
+    "algorithm-template/动态规划/01背包.md",
     "modern effective c++/Item28 引用折叠.md",
-    "modern effective c++/Item2 auto类型推导.md",
-    "modern effective c++/Item1 模板类型推导.md",
-    "modern effective c++/Item21 make_shared.md",
-    "modern effective c++/Item23 move and forward.md",
-    "modern effective c++/Item19 shared_ptr.md",
-    "modern effective c++/Item18 独占资源的unique_ptr.md",
-    "modern effective c++/Item7 () and {}.md",
-    "modern effective c++/Item16 特殊成员函数.md",
-    "modern effective c++/Item15 constexpr.md",
-    "modern effective c++/Item14 使用noexcept.md",
-    "modern effective c++/Item13 优先考虑const_iterator.md",
-    "modern effective c++/Item9 using and typedef.md",
-    "modern effective c++/Item11 =delete.md",
-    "modern effective c++/Item3 decltype.md",
-    "modern effective c++/Item10 enum.md",
+    "algorithm-template/蓝桥杯备忘录.md",
+    "algorithm-template/蓝桥杯.md",
+    "algorithm-template/组合数.md",
+    "algorithm-template/汪哲文亮灯法.md",
+    "algorithm-template/杂项/Gosper’s hack.md",
+    "algorithm-template/杂项",
+    "algorithm-template/数据结构/线段树.md",
+    "algorithm-template/数据结构/树状数组.md",
+    "algorithm-template/数据结构/并查集.md",
+    "algorithm-template/数据结构/Treap.md",
+    "algorithm-template/数据结构",
+    "algorithm-template/数学/快速傅里叶变换(FFT).md",
+    "algorithm-template/数学",
+    "algorithm-template/字符串/KMP.md",
+    "algorithm-template/字符串",
+    "algorithm-template/图论/树的直径.md",
+    "algorithm-template/图论/最近公共祖先lca.md",
+    "algorithm-template/图论/最小生成树.md",
+    "algorithm-template/图论/搜索环.md",
+    "algorithm-template/图论/拓扑排序.md",
+    "algorithm-template/图论/强连通分量.md",
+    "algorithm-template/图论/单源最短路.md",
+    "algorithm-template/图论/全源最短路.md",
+    "algorithm-template/图论/二分图.md",
+    "algorithm-template/图论/tarjan scc缩点.md",
+    "algorithm-template/图论",
+    "algorithm-template/动态规划",
+    "algorithm-template/create a link.md",
+    "algorithm-template/Welcome.md",
+    "algorithm-template",
+    "Vscode-vim.md",
+    "Untitled.canvas",
     "modern effective c++",
     "Untitled"
   ]
