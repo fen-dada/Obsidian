@@ -55,7 +55,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tarjan eDCC缩点.md",
+                "file": "algorithm-template/图论/tarjan eDCC缩点.md",
                 "mode": "source",
                 "source": false
               },
@@ -211,10 +211,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3e4eb37e1ebf2a98",
+  "active": "ee147672e06a626e",
   "lastOpenFiles": [
     "algorithm-template/图论/tarjan割边.md",
-    "tarjan eDCC缩点.md",
+    "algorithm-template/图论/tarjan eDCC缩点.md",
     "algorithm-template/图论/tarjan割点.md",
     "algorithm-template/图论/tarjan scc缩点.md",
     "algorithm-template/图论/强连通分量.md",
