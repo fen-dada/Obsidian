@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "IbDocument",
-      "SiVim",
-      "IbRectangleOnRectangleVertical",
-      "SiCplusplus",
-      "IbGithub"
+      "IbTextAlignLeft",
+      "SiGraphql",
+      "IbGrid",
+      "IbTreeMapDown1",
+      "SiSmartthings"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -34,5 +34,10 @@
   "第三次培训.md": "IbRectangleOnRectangleVertical",
   "第二次培训.md": "IbRectangleOnRectangleVertical",
   "Vscode-vim.md": "SiVim",
-  "algorithm-template": "IbDocument"
+  "algorithm-template": "IbDocument",
+  "algorithm-template/数学": "SiSmartthings",
+  "algorithm-template/数据结构": "IbTreeMapDown1",
+  "algorithm-template/动态规划": "IbGrid",
+  "algorithm-template/图论": "SiGraphql",
+  "algorithm-template/字符串": "IbTextAlignLeft"
 }
