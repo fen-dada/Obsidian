@@ -4,67 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "f35f9348a375ed6d",
+        "id": "2d94c74deb1cf8c2",
         "type": "tabs",
         "children": [
           {
-            "id": "2b347ea42c05497a",
+            "id": "335138ac035c972b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "algorithm-template/图论/tarjan scc缩点.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "tarjan scc缩点"
-            }
-          },
-          {
-            "id": "f97e56f3e5407f2e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "algorithm-template/图论/tarjan割点.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "tarjan割点"
-            }
-          },
-          {
-            "id": "b86e5358379ceecf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "algorithm-template/图论/tarjan割边.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "tarjan割边"
-            }
-          },
-          {
-            "id": "3e4eb37e1ebf2a98",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "algorithm-template/图论/tarjan eDCC缩点.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "tarjan eDCC缩点"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#include",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -203,6 +156,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -213,32 +167,34 @@
   },
   "active": "ee147672e06a626e",
   "lastOpenFiles": [
-    "algorithm-template/图论/tarjan割边.md",
-    "algorithm-template/图论/tarjan eDCC缩点.md",
-    "algorithm-template/图论/tarjan割点.md",
-    "algorithm-template/图论/tarjan scc缩点.md",
-    "algorithm-template/图论/强连通分量.md",
-    "algorithm-template/杂项/莫队.md",
-    "Vscode-vim.md",
-    "algorithm-template/数学/扩展欧几里得定理.md",
-    "algorithm-template/图论/最近公共祖先lca.md",
+    "CF补题.md",
+    "Pasted image 20250722165055.png",
+    "Untitled.canvas",
+    "电气工程.md",
+    "电力电子.md",
+    "algorithm-template/图论/拓扑排序.md",
     "algorithm-template/数学/组合数.md",
-    "algorithm-template/数据结构/st表.md",
-    "algorithm-template/数据结构/线段树.md",
-    "algorithm-template/数据结构/树状数组.md",
-    "algorithm-template/蓝桥杯备忘录.md",
-    "algorithm-template/蓝桥杯.md",
-    "algorithm-template/图论/单源最短路.md",
-    "algorithm-template/数据结构/并查集.md",
-    "algorithm-template/杂项/连续异或和.md",
-    "algorithm-template/数学/快速傅里叶变换(FFT).md",
-    "第三次培训.md",
-    "燕骏培训.md",
+    "algorithm-template/图论/最小生成树.md",
+    "modern effective c++/Item23 move and forward.md",
+    "modern effective c++/Item25 使用move.md",
+    "modern effective c++/Item2 auto类型推导.md",
     "第二次培训.md",
-    "algorithm-template/动态规划/01背包.md",
-    "modern effective c++/Item28 引用折叠.md",
-    "algorithm-template/汪哲文亮灯法.md",
+    "手写一个vector容器.md",
+    "Vscode-vim.md",
+    "algorithm-template/杂项/连续异或和.md",
+    "algorithm-template/图论/二分图.md",
     "algorithm-template/杂项/Gosper’s hack.md",
+    "algorithm-template/杂项/莫队.md",
+    "algorithm-template/数学/扩展欧几里得定理.md",
+    "algorithm-template/数学/快速傅里叶变换(FFT).md",
+    "algorithm-template/数据结构/线段树.md",
+    "algorithm-template/图论/最近公共祖先lca.md",
+    "algorithm-template/图论/搜索环.md",
+    "algorithm-template/图论/树的直径.md",
+    "algorithm-template/图论/全源最短路.md",
+    "algorithm-template/图论/强连通分量.md",
+    "algorithm-template/图论/单源最短路.md",
+    "Untitled",
     "algorithm-template/杂项",
     "algorithm-template/数据结构",
     "algorithm-template/数学",
@@ -246,8 +202,6 @@
     "algorithm-template/图论",
     "algorithm-template/动态规划",
     "algorithm-template",
-    "Untitled.canvas",
-    "modern effective c++",
-    "Untitled"
+    "modern effective c++"
   ]
 }

@@ -2,5 +2,7 @@
   "accentColor": "",
   "theme": "obsidian",
   "interfaceFontFamily": "FiraCode Nerd Font,FiraCode Nerd Font Mono",
-  "textFontFamily": "FiraCode Nerd Font"
+  "textFontFamily": "FiraCode Nerd Font",
+  "baseFontSize": 19,
+  "cssTheme": "Things"
 }

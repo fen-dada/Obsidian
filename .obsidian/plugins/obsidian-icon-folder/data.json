@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "IbDashboardOneIsFilled",
       "IbTextAlignLeft",
       "SiGraphql",
       "IbGrid",
-      "IbTreeMapDown1",
-      "SiSmartthings"
+      "IbTreeMapDown1"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -39,5 +39,6 @@
   "algorithm-template/数据结构": "IbTreeMapDown1",
   "algorithm-template/动态规划": "IbGrid",
   "algorithm-template/图论": "SiGraphql",
-  "algorithm-template/字符串": "IbTextAlignLeft"
+  "algorithm-template/字符串": "IbTextAlignLeft",
+  "algorithm-template/杂项": "IbDashboardOneIsFilled"
 }
