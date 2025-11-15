@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiCplusplus",
+      "SiRust",
       "IbDashboardOneIsFilled",
       "IbTextAlignLeft",
-      "SiGraphql",
-      "IbGrid",
-      "IbTreeMapDown1"
+      "SiGraphql"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -27,7 +27,7 @@
     "iconsInNotesEnabled": true,
     "iconIdentifier": ":"
   },
-  "modern effective c++": "IbGithub",
+  "modern effective c++": "SiCplusplus",
   "手写一个vector容器.md": "SiCplusplus",
   "c语言公开课.md": "IbRectangleOnRectangleVertical",
   "燕骏培训.md": "IbRectangleOnRectangleVertical",
@@ -40,5 +40,6 @@
   "algorithm-template/动态规划": "IbGrid",
   "algorithm-template/图论": "SiGraphql",
   "algorithm-template/字符串": "IbTextAlignLeft",
-  "algorithm-template/杂项": "IbDashboardOneIsFilled"
+  "algorithm-template/杂项": "IbDashboardOneIsFilled",
+  "Crust of rust": "SiRust"
 }
