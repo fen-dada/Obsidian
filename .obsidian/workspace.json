@@ -13,15 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Crust of rust/fn,closure and trait.md",
+                "file": "algorithm-template/数据结构/树状数组.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "fn,closure and trait"
+              "title": "树状数组"
+            }
+          },
+          {
+            "id": "ab4564c6bfbb9881",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "题面.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "题面"
+            }
+          },
+          {
+            "id": "0efd09b9ff2d662b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "线性基.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "线性基"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -169,36 +198,40 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0933834e513424db",
+  "active": "0efd09b9ff2d662b",
   "lastOpenFiles": [
+    "题面.md",
+    "线性基.md",
+    "Pasted image 20251124155949.png",
+    "Pasted image 20251124161411.png",
+    "Pasted image 20251124154911.png",
     "algorithm-template/数据结构/树状数组.md",
-    "algorithm-template/数据结构/并查集.md",
-    "algorithm-template/数据结构/线段树.md",
-    "algorithm-template/数学/扩展欧几里得定理.md",
-    "Crust of rust/fn,closure and trait.md",
-    "Crust of rust",
     "algorithm-template/数学/组合数.md",
+    "algorithm-template/数学/扩展欧几里得定理.md",
+    "algorithm-template/图论/最近公共祖先lca.md",
+    "algorithm-template/图论/拓扑排序.md",
+    "algorithm-template/图论/搜索环.md",
+    "algorithm-template/图论/树的直径.md",
+    "algorithm-template/图论/全源最短路.md",
+    "algorithm-template/图论/强连通分量.md",
+    "algorithm-template/图论/二分图.md",
+    "algorithm-template/图论/单源最短路.md",
+    "algorithm-template/数据结构/并查集.md",
+    "algorithm-template/图论/tarjan scc缩点.md",
+    "Crust of rust/fn,closure and trait.md",
+    "algorithm-template/数据结构/线段树.md",
+    "Crust of rust",
     "CF补题.md",
     "Pasted image 20250722165055.png",
     "Untitled.canvas",
     "电气工程.md",
     "电力电子.md",
-    "algorithm-template/图论/拓扑排序.md",
     "algorithm-template/图论/最小生成树.md",
     "modern effective c++/Item23 move and forward.md",
     "modern effective c++/Item25 使用move.md",
     "modern effective c++/Item2 auto类型推导.md",
     "第二次培训.md",
     "手写一个vector容器.md",
-    "Vscode-vim.md",
-    "algorithm-template/杂项/连续异或和.md",
-    "algorithm-template/图论/二分图.md",
-    "algorithm-template/杂项/Gosper’s hack.md",
-    "algorithm-template/杂项/莫队.md",
-    "algorithm-template/数学/快速傅里叶变换(FFT).md",
-    "algorithm-template/图论/最近公共祖先lca.md",
-    "algorithm-template/图论/搜索环.md",
-    "algorithm-template/图论/树的直径.md",
     "algorithm-template/杂项",
     "algorithm-template/数据结构",
     "algorithm-template/数学",
