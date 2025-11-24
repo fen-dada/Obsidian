@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "线性基.md",
+                "file": "algorithm-template/数学/线性基.md",
                 "mode": "source",
                 "source": false
               },
@@ -198,10 +198,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0efd09b9ff2d662b",
+  "active": "ee147672e06a626e",
   "lastOpenFiles": [
     "题面.md",
-    "线性基.md",
+    "algorithm-template/数学/线性基.md",
     "Pasted image 20251124155949.png",
     "Pasted image 20251124161411.png",
     "Pasted image 20251124154911.png",
