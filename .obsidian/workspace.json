@@ -76,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -224,10 +224,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ee147672e06a626e",
+  "active": "ebec52b10afc52d2",
   "lastOpenFiles": [
-    "algorithm-template/图论/树链剖分.md",
     "algorithm-template/数据结构/线段树.md",
+    "algorithm-template/图论/树链剖分.md",
     "algorithm-template/图论/tarjan eDCC缩点.md",
     "algorithm-template/图论/最小生成树.md",
     "algorithm-template/图论/最近公共祖先lca.md",
