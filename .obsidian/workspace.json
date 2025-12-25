@@ -8,43 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0933834e513424db",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "algorithm-template/数据结构/树状数组.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "树状数组"
-            }
-          },
-          {
             "id": "ab4564c6bfbb9881",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "题面.md",
+                "file": "algorithm-template/数据结构/并查集.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "题面"
-            }
-          },
-          {
-            "id": "0efd09b9ff2d662b",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Pasted image 20251124154911.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251124154911"
+              "title": "并查集"
             }
           },
           {
@@ -53,26 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algorithm-template/数据结构/线段树.md",
+                "file": "algorithm-template/图论/树链剖分.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "线段树"
+              "title": "树链剖分"
             }
           },
           {
-            "id": "ebec52b10afc52d2",
+            "id": "842f071d3b86f541",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "题面.md",
+                "file": "algorithm-template/图论/点分治.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "题面"
+              "title": "点分治"
             }
           },
           {
@@ -95,16 +69,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algorithm-template/图论/树上启发式合并.md",
+                "file": "题面.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "树上启发式合并"
+              "title": "题面"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -252,15 +226,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6dc76961f5547daf",
+  "active": "ee147672e06a626e",
   "lastOpenFiles": [
-    "补题.md",
-    "algorithm-template/图论/树上启发式合并.md",
-    "题面.md",
     "algorithm-template/图论/树链剖分.md",
+    "algorithm-template/图论/点分治.md",
+    "algorithm-template/图论/树上启发式合并.md",
     "algorithm-template/数据结构/线段树.md",
-    "algorithm-template/图论/tarjan eDCC缩点.md",
+    "algorithm-template/数据结构/并查集.md",
+    "补题.md",
     "algorithm-template/图论/最小生成树.md",
+    "题面.md",
+    "algorithm-template/数据结构/树状数组.md",
+    "Pasted image 20251124154911.png",
+    "algorithm-template/图论/tarjan eDCC缩点.md",
     "algorithm-template/图论/最近公共祖先lca.md",
     "algorithm-template/图论/拓扑排序.md",
     "algorithm-template/图论/搜索环.md",
@@ -277,12 +255,8 @@
     "algorithm-template/字符串/KMP.md",
     "algorithm-template/杂项/莫队.md",
     "algorithm-template/杂项/连续异或和.md",
-    "algorithm-template/数学/组合数.md",
-    "algorithm-template/数学/线性基.md",
-    "algorithm-template/数学/扩展欧几里得定理.md",
     "Pasted image 20251124155949.png",
     "Pasted image 20251124161411.png",
-    "Pasted image 20251124154911.png",
     "Crust of rust",
     "Pasted image 20250722165055.png",
     "Untitled.canvas",
