@@ -54,4 +54,6 @@ void perform(int l, int r) {  // 注意，这里的r是区间右端点+1
     it = next(it);
   }
 }
+mp[0] = -1;
+mp[n+1] = -1;
 ```
