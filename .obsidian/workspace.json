@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "bitset.md",
+                "file": "algorithm-template/杂项/bitset.md",
                 "mode": "source",
                 "source": false
               },
@@ -226,10 +226,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "576f6e2a4e011a87",
+  "active": "ee147672e06a626e",
   "lastOpenFiles": [
     "补题.md",
-    "bitset.md",
+    "algorithm-template/杂项/bitset.md",
     "题面.md",
     "algorithm-template/杂项/莫队.md",
     "algorithm-template/数学/类欧几里得算法.md",
