@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algorithm-template/杂项/ODT(珂朵莉树).md",
+                "file": "补题.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ODT(珂朵莉树)"
+              "title": "补题"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "补题.md",
+                "file": "algorithm-template/杂项/莫队.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "补题"
+              "title": "莫队"
             }
           },
           {
@@ -55,16 +55,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algorithm-template/数学/类欧几里得算法.md",
+                "file": "algorithm-template/图论/强连通分量.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "类欧几里得算法"
+              "title": "强连通分量"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -212,17 +211,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6201f71204f14028",
+  "active": "ab4564c6bfbb9881",
   "lastOpenFiles": [
+    "algorithm-template/杂项/ODT(珂朵莉树).md",
+    "algorithm-template/杂项/莫队.md",
     "algorithm-template/数据结构/树状数组.md",
+    "algorithm-template/图论/强连通分量.md",
+    "补题.md",
+    "algorithm-template/数据结构/并查集.md",
+    "algorithm-template/数学/类欧几里得算法.md",
     "algorithm-template/数据结构/笛卡尔树.md",
     "algorithm-template/数据结构/线段树.md",
-    "algorithm-template/杂项/ODT(珂朵莉树).md",
-    "补题.md",
     "题面.md",
-    "algorithm-template/杂项/莫队.md",
-    "algorithm-template/数学/类欧几里得算法.md",
-    "algorithm-template/数据结构/并查集.md",
     "1.md",
     "algorithm-template/图论/树上启发式合并.md",
     "algorithm-template/图论/树链剖分.md",
@@ -241,7 +241,6 @@
     "algorithm-template/图论/最小生成树.md",
     "Pasted image 20251124154911.png",
     "algorithm-template/图论/tarjan eDCC缩点.md",
-    "algorithm-template/图论/最近公共祖先lca.md",
     "Pasted image 20251124155949.png",
     "Pasted image 20251124161411.png",
     "Crust of rust",
