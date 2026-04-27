@@ -6,6 +6,7 @@
 # 忽略缓存和第三方插件的临时数据
 .obsidian/cache/
 .obsidian/plugins/*/data.json
+.obsidian/plugins/*
 # 如果你不想同步某些插件的本地状态，可以取消注释下面这行
 # .obsidian/plugins/*/*.log
 
