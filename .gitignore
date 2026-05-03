@@ -7,6 +7,10 @@
 .obsidian/cache/
 .obsidian/plugins/*/data.json
 .obsidian/plugins/*
+.obsidian/community-plugins.json
+.obsidian/hotkeys.json
+.obsidian/appearance.json
+.obsidian/core-plugins.json
 # 如果你不想同步某些插件的本地状态，可以取消注释下面这行
 # .obsidian/plugins/*/*.log
 
