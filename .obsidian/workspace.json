@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "0c475c22fbe332c8",
+    "type": "split",
+    "children": [
+      {
+        "id": "56d09a579287d771",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ab4564c6bfbb9881",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "61346e33194a4636",
+    "type": "split",
+    "children": [
+      {
+        "id": "8677d4c7636b0f7a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ee147672e06a626e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "ee57dcd92018e795",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "a2beca1e4d609bc4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 221.50390243530273
+  },
+  "right": {
+    "id": "53b2c78741698928",
+    "type": "split",
+    "children": [
+      {
+        "id": "11e47e131d7c922e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "60aebd9e8a63dd0c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "algorithm-template/组合数.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 组合数"
+            }
+          },
+          {
+            "id": "1097166805665d0e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "algorithm-template/组合数.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 组合数"
+            }
+          },
+          {
+            "id": "ff71a77d2c05de09",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "be2de1b429ac3ad9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "algorithm-template/组合数.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 组合数"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "ab4564c6bfbb9881",
+  "lastOpenFiles": [
+    "Untitled.base",
+    "b228e35830bd1b8c4517dd0df0dee0b2.jpg",
+    "Untitled.md",
+    "algorithm-template/图论/二分图.md",
+    "algorithm-template/字符串/KMP.md",
+    "AI公开课/Pasted image 20260413231835.png",
+    "AI公开课/Gemini_Generated_Image_dnse0pdnse0pdnse.png",
+    "AI公开课/公开课--AI编程技巧.md",
+    "algorithm-template/数据结构/并查集.md",
+    "Pasted image 20260413233612.png",
+    "Pasted image 20260413233542.png",
+    "Pasted image 20251124161411.png",
+    "Pasted image 20251124155949.png",
+    "Pasted image 20251124154911.png",
+    "AI公开课",
+    "algorithm-template/数学/组合数.md",
+    "algorithm-template/数学/线性基.md",
+    "algorithm-template/数学/类欧几里得算法.md",
+    "algorithm-template/数学/扩展欧几里得定理.md",
+    "algorithm-template/图论/搜索环.md",
+    "algorithm-template/数学/快速傅里叶变换(FFT).md",
+    "algorithm-template/数据结构/树状数组.md",
+    "algorithm-template/数据结构/线段树.md",
+    "algorithm-template/图论/点分治.md",
+    "algorithm-template/杂项/ODT(珂朵莉树).md",
+    "algorithm-template/杂项/Gosper’s hack.md",
+    "algorithm-template/杂项/连续异或和.md",
+    "algorithm-template/图论/tarjan割点.md",
+    "algorithm-template/图论/tarjan割边.md",
+    "algorithm-template/图论/tarjan vDCC缩点.md",
+    "algorithm-template/图论/tarjan scc缩点.md",
+    "algorithm-template/图论/tarjan eDCC缩点.md",
+    "algorithm-template/图论/最小生成树.md",
+    "algorithm-template/图论/最近公共祖先lca.md",
+    "algorithm-template/图论/拓扑排序.md",
+    "Crust of rust",
+    "Pasted image 20250722165055.png",
+    "Untitled.canvas",
+    "algorithm-template/杂项",
+    "algorithm-template/数据结构",
+    "algorithm-template/数学",
+    "algorithm-template/字符串",
+    "algorithm-template/图论",
+    "algorithm-template/动态规划",
+    "algorithm-template"
+  ]
+}

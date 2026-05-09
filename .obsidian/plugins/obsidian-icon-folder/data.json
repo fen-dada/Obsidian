@@ -1,0 +1,45 @@
+{
+  "settings": {
+    "migrated": 4,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "none",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "SiCplusplus",
+      "SiRust",
+      "IbDashboardOneIsFilled",
+      "IbTextAlignLeft",
+      "SiGraphql"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInFrontmatterEnabled": false,
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconIdentifier": ":"
+  },
+  "modern effective c++": "SiCplusplus",
+  "手写一个vector容器.md": "SiCplusplus",
+  "c语言公开课.md": "IbRectangleOnRectangleVertical",
+  "燕骏培训.md": "IbRectangleOnRectangleVertical",
+  "第三次培训.md": "IbRectangleOnRectangleVertical",
+  "第二次培训.md": "IbRectangleOnRectangleVertical",
+  "Vscode-vim.md": "SiVim",
+  "algorithm-template": "IbDocument",
+  "algorithm-template/数学": "SiSmartthings",
+  "algorithm-template/数据结构": "IbTreeMapDown1",
+  "algorithm-template/动态规划": "IbGrid",
+  "algorithm-template/图论": "SiGraphql",
+  "algorithm-template/字符串": "IbTextAlignLeft",
+  "algorithm-template/杂项": "IbDashboardOneIsFilled",
+  "Crust of rust": "SiRust"
+}
