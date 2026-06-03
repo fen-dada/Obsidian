@@ -1,6 +1,6 @@
 The image provided is a (line/pi/bar chart) which is about (topic)
 
-From this chart, we can see X axis shows..., and Y axis shows.../different sectors show.../different colors show...,figures show.../column shows..., row shows.../different stages -> labels/ different stages -> arrows
+According to this chart, we can see X axis shows..., and Y axis shows.../different sectors show.../different colors show...,figures show.../column shows..., row shows.../different stages -> labels/ different stages -> arrows
 
 So, it is clear than the largest number is..., which is related to...
 
