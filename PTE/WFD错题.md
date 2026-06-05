@@ -79,3 +79,11 @@ He wrote poetry and plays as well as scientific papers.
 When the root system of a plant fails, foliage suffers.
 
 The effective business management always happened with new ideas.
+
+Participants initially select from a range of foundation subjects.
+
+Students are required to have an undergraduate degree in Biology to be enrolled in this course.
+
+The celebrated theory is still the source of a great controversy.
+  
+Animals raised in captivity behave differently than their wild counterparts.
