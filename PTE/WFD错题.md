@@ -29,3 +29,29 @@ One student representative will be selected from each class.
 
 A good academic paper / should present / a clear argument.
 A good academic essay / should have（或者present）a clear argument.
+
+The rising inflation rate indicates a decrease in demand for consumer products.
+版本二：Rising inflation / may indicate an increase / in the demand for consumer products.
+版本三：Rising inflation / means increasing goods prices / and decreasing demand for products.
+
+The dance department stages elaborated performances each semester.
+
+The other book is not thorough but it's more insightful.
+
+  
+All industries are a system of inputs, processes, outputs and feedback.
+版本 二：All industries / consist of systems / of inputs, processes, outputs and feedback.
+版本三：All industries / consist of inputs, processes, outputs and feedback.
+
+  
+Strangely, people are simultaneously impressed by and skeptical of using statistics.
+
+  
+Polar regions' islands are ideal for astrophysicists and meteorologists to carry out field experiments.
+
+  
+Neuroscience is a compound of completely separate parts.
+
+Classical mechanics is sometimes considered as a branch of applied mathematics.
+版本二：Classical mechanics / is sometimes seen as / a branch of applied mechanics.
+版本三：Classical mechanics / is considered as / a branch of mathematics.
