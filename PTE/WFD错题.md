@@ -70,3 +70,12 @@ Participating in the class is the center of the course.
 Philosophy uses logic and reasons to analyze human experiences.
 
 We aim to develop the partnership with the government and financial institutions.
+
+Lecture outlines are available on the faculty board and internal website.
+版本二： Lecture outlines / are available / on the college internal website.
+
+He wrote poetry and plays as well as scientific papers.
+
+When the root system of a plant fails, foliage suffers.
+
+The effective business management always happened with new ideas.
