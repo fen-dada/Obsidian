@@ -55,3 +55,18 @@ Neuroscience is a compound of completely separate parts.
 Classical mechanics is sometimes considered as a branch of applied mathematics.
 版本二：Classical mechanics / is sometimes seen as / a branch of applied mechanics.
 版本三：Classical mechanics / is considered as / a branch of mathematics.
+
+  
+The elective course introduces engineering students to construct practices and concepts.
+版本二：construct 变为 construction
+
+  
+The college operates a system of continuous assessment.
+版本二：The cooperator operates a continuous assessment.
+
+  
+Participating in the class is the center of the course.
+
+Philosophy uses logic and reasons to analyze human experiences.
+
+We aim to develop the partnership with the government and financial institutions.
