@@ -108,3 +108,17 @@ Salt is produced from the (sea water) or extracted from the ground.
 Mixtures are defined as a compound of (chemically) separate parts.
 
 This course (involves a combination) of pure and applied mathematics.
+
+The rise in the sea level indicates climate change.
+
+Designers need to keep up with (the) social trend.
+
+Academic libraries across the world are steadily incorporating social media.
+
+The marine environment has been destroyed by pollution and unsustainable development.
+
+Many diseases that were once serious have been eradicated.
+
+The digital camera has some advantages over traditional film.
+
+New media journalism is an interesting field of study.
