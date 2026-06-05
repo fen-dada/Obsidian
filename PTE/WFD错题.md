@@ -87,3 +87,24 @@ Students are required to have an undergraduate degree in Biology to be enrolled 
 The celebrated theory is still the source of a great controversy.
   
 Animals raised in captivity behave differently than their wild counterparts.
+
+The farmers need to adapt to the changes of the climate.
+
+Social psychology is concerned with the understanding of human behaviors.
+
+Muscle cells bring parts of the body closer together.
+
+The commissioner will apportion the funds among all the authorities.
+版本二：authorities可能为sovereignties
+  
+Food containing too much sugar and calories has little or no nutritional value.
+
+Plants are able to continue growing throughout their lives.
+
+Request for late applications will not be accepted under any circumstances.
+
+Salt is produced from the (sea water) or extracted from the ground.
+
+Mixtures are defined as a compound of (chemically) separate parts.
+
+This course (involves a combination) of pure and applied mathematics.
