@@ -141,3 +141,10 @@ Physics is the key subject to understanding the world and the universe.
 The university has invested in new technologies designed to support learning.
 
 More research is needed before any definitive conclusion is drawn.
+
+Take the first step by applying for (a) university scholarship now.
+
+The rising temperature is changing the (wildlife) population.
+
+Students will focus on reporting news about the changing media world.
+版本二：Students are focusing on / the reporting news / that changed media world.
