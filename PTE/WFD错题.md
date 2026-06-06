@@ -176,3 +176,7 @@ The ability to work with (fellow) students (cannot) be stressed enough.
 Remember, the prestigious election of stewardship has strict eligibility criteria.
 
 You will acquire many skills during the academic studies.
+  
+Student (representatives) will be visiting classes with voting forms.
+  
+All of the assignments must be submitted in person to the faculty office.
