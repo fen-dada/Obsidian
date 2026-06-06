@@ -148,3 +148,17 @@ The rising temperature is changing the (wildlife) population.
 
 Students will focus on reporting news about the changing media world.
 版本二：Students are focusing on / the reporting news / that changed media world.
+
+The department has a (higher-than-normal) proportion of postgraduate students.
+
+The railway makes the (long-distance) travel possible for everyone.
+
+Plants are the living things that can grow on land or in water.
+
+The business policy seminar includes an internship (with a) local firm.
+
+It may not mean that it is possible to solve the problem easily.
+
+He landed his job in a very (prestigious law firm).
+
+Geography is generally divided into two branches, human and (physical).
