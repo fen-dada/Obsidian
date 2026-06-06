@@ -122,3 +122,9 @@ Many diseases that were once serious have been eradicated.
 The digital camera has some advantages over traditional film.
 
 New media journalism is an interesting field of study.
+  
+Banks charge interest on the money they loan to their customers.
+  
+The student shop sells a range of stationery.
+  
+The area has a variety of underwater habitats and species.
