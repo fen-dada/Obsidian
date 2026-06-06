@@ -180,3 +180,19 @@ You will acquire many skills during the academic studies.
 Student (representatives) will be visiting classes with voting forms.
   
 All of the assignments must be submitted in person to the faculty office.
+  
+Important details (from) the argument are missing in the summary.
+  
+It is really a comprehensive program that (covers) both theory and practice.
+
+All (of) your assignments are due on Wednesday.
+  
+A group meeting will be held tomorrow in the (library) conference room.
+  
+Please make sure you have (correctly cited) all the (necessary) materials.
+
+Organizational failure is considered from various perspectives (in) academic literature.
+
+Certain scientific principles need to be learned verbally or by (logical deduction).
+
+The director of the gallery was grateful for the (anonymous) donation.
