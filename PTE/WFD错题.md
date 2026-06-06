@@ -196,3 +196,19 @@ Organizational failure is considered from various perspectives (in) academic lit
 Certain scientific principles need to be learned verbally or by (logical deduction).
 
 The director of the gallery was grateful for the (anonymous) donation.
+  
+While some people regard it as reforming zeal, others regard it as recklessness.
+
+Affordable housing is an important issue for all members of society.
+
+The massive accumulation of data was converted into a (communicable) argument.
+  
+(Preparation) is important to avoid (mishaps) in the lab.
+  
+We (can't) consider any increase in our price at this stage.
+  
+Consumer confidence has (a direct) influence on sales.
+  
+Statistical results should be (described) in different ways depending on circumstances.
+
+Human beings compete with other living things for resources and space.
