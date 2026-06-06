@@ -128,3 +128,16 @@ Banks charge interest on the money they loan to their customers.
 The student shop sells a range of stationery.
   
 The area has a variety of underwater habitats and species.
+  
+The printers automatically print two sides of each page.
+版本二：The printers / automatically print / both sides of each page.
+
+Make sure you choose a course that provides great career opportunities.
+
+Distance learning allows you to develop your career around your commitments.
+
+Physics is the key subject to understanding the world and the universe.
+  
+The university has invested in new technologies designed to support learning.
+
+More research is needed before any definitive conclusion is drawn.
