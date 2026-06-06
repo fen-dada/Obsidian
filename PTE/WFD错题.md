@@ -162,3 +162,17 @@ It may not mean that it is possible to solve the problem easily.
 He landed his job in a very (prestigious law firm).
 
 Geography is generally divided into two branches, human and (physical).
+
+Those who are considering a career in marketing should attend the talk.
+
+This course provides the opportunity to get valuable industry experience.
+
+There is a pharmacy on campus near the bookstore.
+
+Experts are now able to forecast weather over much longer (periods).
+
+The ability to work with (fellow) students (cannot) be stressed enough.
+
+Remember, the prestigious election of stewardship has strict eligibility criteria.
+
+You will acquire many skills during the academic studies.
