@@ -38,12 +38,10 @@ The dance department stages elaborated performances each semester.
 
 The other book is not thorough but it's more insightful.
 
-  
 All industries are a system of inputs, processes, outputs and feedback.
 版本 二：All industries / consist of systems / of inputs, processes, outputs and feedback.
 版本三：All industries / consist of inputs, processes, outputs and feedback.
 
-  
 Strangely, people are simultaneously impressed by and skeptical of using statistics.
 
   
