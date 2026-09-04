@@ -55,4 +55,8 @@ if (displayMath) {
 }
 
 fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-fs.writeFileSync(outputPath, output.join(newline), "utf8");
+let prepared = output.join(newline);
+if (prepared.trim() === "") {
+  prepared = `# ${path.basename(inputPath, path.extname(inputPath))}${newline}`;
+}
+fs.writeFileSync(outputPath, prepared, "utf8");
