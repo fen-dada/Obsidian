@@ -41,6 +41,7 @@ jobs:
             texlive-xetex \
             texlive-lang-chinese \
             texlive-latex-extra \
+            texlive-fonts-recommended \
             fonts-noto-cjk \
             poppler-utils
 
