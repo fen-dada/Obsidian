@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+source_root="$repo_root/板子"
+site_root="$repo_root/_site"
+header_file="$repo_root/scripts/pdf-header.tex"
+
+if [[ ! -d "$source_root" ]]; then
+  echo "Missing source directory: $source_root" >&2
+  exit 1
+fi
+
+if [[ "$site_root" != "$repo_root/_site" || "$site_root" == "$repo_root" || "$site_root" == "/" ]]; then
+  echo "Refusing to clean unsafe output path: $site_root" >&2
+  exit 1
+fi
+
+for command_name in pandoc xelatex node; do
+  if ! command -v "$command_name" >/dev/null 2>&1; then
+    echo "Required command is unavailable: $command_name" >&2
+    exit 1
+  fi
+done
+
+# The Pages artifact is rebuilt from scratch. Removed or renamed Markdown files
+# therefore cannot leave stale PDFs in the next deployment.
+rm -rf -- "$site_root"
+mkdir -p "$site_root/板子"
+touch "$site_root/.nojekyll"
+
+pdf_count=0
+while IFS= read -r -d '' markdown_file; do
+  relative_path="${markdown_file#"$source_root"/}"
+  relative_pdf="${relative_path%.md}.pdf"
+  output_pdf="$site_root/板子/$relative_pdf"
+
+  mkdir -p "$(dirname "$output_pdf")"
+
+  pandoc "$markdown_file" \
+    --from="markdown+tex_math_dollars+raw_tex+fenced_code_attributes" \
+    --pdf-engine=xelatex \
+    --resource-path="$(dirname "$markdown_file"):$source_root:$repo_root" \
+    --highlight-style=tango \
+    --include-in-header="$header_file" \
+    --metadata=lang:zh-CN \
+    -V papersize:a4 \
+    -V fontsize:10pt \
+    -V geometry:margin=1.45cm \
+    -V mainfont="Noto Serif CJK SC" \
+    -V sansfont="Noto Sans CJK SC" \
+    -V monofont="Noto Sans Mono CJK SC" \
+    -V CJKmainfont="Noto Serif CJK SC" \
+    -o "$output_pdf"
+
+  pdf_count=$((pdf_count + 1))
+done < <(find "$source_root" -type f -name '*.md' -print0)
+
+if [[ "$pdf_count" -eq 0 ]]; then
+  echo "No Markdown files found under $source_root" >&2
+  exit 1
+fi
+
+node "$repo_root/scripts/generate-board-index.mjs" "$site_root"
+echo "Generated $pdf_count PDFs under $site_root/板子"
