@@ -36,22 +36,33 @@ while IFS= read -r -d '' markdown_file; do
   output_pdf="$site_root/板子/$relative_pdf"
 
   mkdir -p "$(dirname "$output_pdf")"
+  conversion_log="$(mktemp)"
+  echo "Converting: $relative_path"
 
-  pandoc "$markdown_file" \
-    --from="markdown+tex_math_dollars+raw_tex+fenced_code_attributes" \
-    --pdf-engine=xelatex \
-    --resource-path="$(dirname "$markdown_file"):$source_root:$repo_root" \
-    --highlight-style=tango \
-    --include-in-header="$header_file" \
-    --metadata=lang:zh-CN \
-    -V papersize:a4 \
-    -V fontsize:10pt \
-    -V geometry:margin=1.45cm \
-    -V mainfont="Noto Serif CJK SC" \
-    -V sansfont="Noto Sans CJK SC" \
-    -V monofont="Noto Sans Mono CJK SC" \
-    -V CJKmainfont="Noto Serif CJK SC" \
-    -o "$output_pdf"
+  if ! pandoc "$markdown_file" \
+      --from="markdown+tex_math_dollars+raw_tex+fenced_code_attributes" \
+      --pdf-engine=xelatex \
+      --resource-path="$(dirname "$markdown_file"):$source_root:$repo_root" \
+      --highlight-style=tango \
+      --include-in-header="$header_file" \
+      --metadata=lang:zh-CN \
+      -V papersize:a4 \
+      -V fontsize:10pt \
+      -V geometry:margin=1.45cm \
+      -V mainfont="Noto Serif CJK SC" \
+      -V sansfont="Noto Sans CJK SC" \
+      -V monofont="Noto Sans Mono CJK SC" \
+      -V CJKmainfont="Noto Serif CJK SC" \
+      -o "$output_pdf" >"$conversion_log" 2>&1; then
+    error_summary="$(tail -n 20 "$conversion_log" | tr '\n' ' ' | cut -c1-1800)"
+    error_summary="${error_summary//'%'/'%25'}"
+    echo "::error title=PDF conversion failed,file=$relative_path::$error_summary"
+    cat "$conversion_log" >&2
+    rm -f -- "$conversion_log"
+    exit 1
+  fi
+
+  rm -f -- "$conversion_log"
 
   pdf_count=$((pdf_count + 1))
 done < <(find "$source_root" -type f -name '*.md' -print0)
