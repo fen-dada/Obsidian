@@ -26,6 +26,8 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    container:
+      image: pandoc/latex:3.10-ubuntu
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -36,16 +38,12 @@ jobs:
 
       - name: Install PDF tools and Chinese fonts
         run: |
-          sudo apt-get update
-          sudo env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-            pandoc \
-            lmodern \
-            texlive-xetex \
-            texlive-lang-chinese \
-            texlive-latex-extra \
-            texlive-fonts-recommended \
+          apt-get update
+          env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+            nodejs \
             fonts-noto-cjk \
             poppler-utils
+          fc-cache -f
 
       - name: Build PDFs
         run: bash scripts/build-board-pdfs.sh
