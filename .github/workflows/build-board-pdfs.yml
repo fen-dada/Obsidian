@@ -31,6 +31,9 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    defaults:
+      run:
+        shell: bash
 
     steps:
       - name: Checkout repository
