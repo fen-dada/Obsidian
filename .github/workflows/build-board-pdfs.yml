@@ -44,8 +44,21 @@ jobs:
             fonts-noto-cjk \
             poppler-utils
           fc-cache -f
-          tlmgr option repository https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/tlnet-final
-          tlmgr install xecjk fvextra
+
+          tex_log=$(mktemp)
+          if ! {
+            tlmgr option repository https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/tlnet-final
+            tlmgr install xecjk fvextra
+          } >"$tex_log" 2>&1; then
+            tex_error=$(tail -n 20 "$tex_log" | tr '\n' ' ' | cut -c1-1800)
+            tex_error="${tex_error//'%'/'%25'}"
+            echo "::error title=TeX package installation failed::$tex_error"
+            cat "$tex_log" >&2
+            rm -f -- "$tex_log"
+            exit 1
+          fi
+          cat "$tex_log"
+          rm -f -- "$tex_log"
 
       - name: Build PDFs
         run: bash scripts/build-board-pdfs.sh
