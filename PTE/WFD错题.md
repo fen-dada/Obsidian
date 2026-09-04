@@ -1,4 +1,4 @@
-Music has the ability to shape our emotions. 
+åMusic has the ability to shape our emotions. 
 
 Universities need to secure the grants (funds) for research subjects.
 
