@@ -43,7 +43,11 @@ for (const line of lines) {
     continue;
   }
 
-  output.push(line);
+  if (fenceMarker === null && !displayMath) {
+    output.push(line.replaceAll("\\(", "$").replaceAll("\\)", "$"));
+  } else {
+    output.push(line);
+  }
 }
 
 if (displayMath) {
