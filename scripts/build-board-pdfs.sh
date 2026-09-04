@@ -5,6 +5,8 @@ repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 source_root="$repo_root/板子"
 site_root="$repo_root/_site"
 header_file="$repo_root/scripts/pdf-header.tex"
+temporary_root="$(mktemp -d)"
+trap 'rm -rf -- "$temporary_root"' EXIT
 
 if [[ ! -d "$source_root" ]]; then
   echo "Missing source directory: $source_root" >&2
@@ -34,12 +36,16 @@ while IFS= read -r -d '' markdown_file; do
   relative_path="${markdown_file#"$source_root"/}"
   relative_pdf="${relative_path%.md}.pdf"
   output_pdf="$site_root/板子/$relative_pdf"
+  prepared_markdown="$temporary_root/$relative_path"
 
   mkdir -p "$(dirname "$output_pdf")"
+  mkdir -p "$(dirname "$prepared_markdown")"
   conversion_log="$(mktemp)"
   echo "Converting: $relative_path"
 
-  if ! pandoc "$markdown_file" \
+  node "$repo_root/scripts/prepare-markdown.mjs" "$markdown_file" "$prepared_markdown"
+
+  if ! pandoc "$prepared_markdown" \
       --from="markdown+tex_math_dollars+raw_tex+fenced_code_attributes" \
       --pdf-engine=xelatex \
       --resource-path="$(dirname "$markdown_file"):$source_root:$repo_root" \
@@ -56,7 +62,7 @@ while IFS= read -r -d '' markdown_file; do
       -o "$output_pdf" >"$conversion_log" 2>&1; then
     error_summary="$(tail -n 20 "$conversion_log" | tr '\n' ' ' | cut -c1-1800)"
     error_summary="${error_summary//'%'/'%25'}"
-    echo "::error title=PDF conversion failed,file=$relative_path::$error_summary"
+    echo "::error title=PDF conversion failed,file=板子/$relative_path::$error_summary"
     cat "$conversion_log" >&2
     rm -f -- "$conversion_log"
     exit 1

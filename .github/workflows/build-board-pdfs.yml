@@ -7,6 +7,7 @@ on:
     paths:
       - "板子/**"
       - "scripts/build-board-pdfs.sh"
+      - "scripts/prepare-markdown.mjs"
       - "scripts/generate-board-index.mjs"
       - "scripts/pdf-header.tex"
       - ".github/workflows/build-board-pdfs.yml"
