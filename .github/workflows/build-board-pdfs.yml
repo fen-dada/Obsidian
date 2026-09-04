@@ -44,6 +44,8 @@ jobs:
             fonts-noto-cjk \
             poppler-utils
           fc-cache -f
+          tlmgr option repository https://ftp.tug.org/historic/systems/texlive/2025/tlnet-final
+          tlmgr install xecjk fvextra
 
       - name: Build PDFs
         run: bash scripts/build-board-pdfs.sh

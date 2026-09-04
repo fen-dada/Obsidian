@@ -49,7 +49,7 @@ while IFS= read -r -d '' markdown_file; do
       --from="markdown+tex_math_dollars+raw_tex+fenced_code_attributes" \
       --pdf-engine=xelatex \
       --resource-path="$(dirname "$markdown_file"):$source_root:$repo_root" \
-      --highlight-style=tango \
+      --syntax-highlighting=tango \
       --include-in-header="$header_file" \
       --metadata=lang:zh-CN \
       -V papersize:a4 \
