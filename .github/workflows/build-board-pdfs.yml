@@ -50,6 +50,7 @@ jobs:
 
           tex_log=$(mktemp)
           if ! {
+            tlmgr update --self
             tlmgr install xecjk fvextra
           } >"$tex_log" 2>&1; then
             tex_error=$(tail -n 20 "$tex_log" | tr '\n' ' ' | cut -c1-1800)
