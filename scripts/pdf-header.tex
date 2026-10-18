@@ -4,3 +4,9 @@
 \setlength{\emergencystretch}{3em}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.45em}
+% A small chapter title leaves room for code on every individual PDF.
+\makeatletter
+\renewcommand{\maketitle}{%
+  {\Large\bfseries\sffamily \@title\par}\vspace{0.6em}%
+}
+\makeatother
