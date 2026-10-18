@@ -28,7 +28,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-            pandoc texlive-xetex texlive-lang-chinese texlive-latex-extra \
+            pandoc texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-fonts-recommended \
             lmodern fonts-noto-cjk poppler-utils python3-pypdf python3-reportlab
           fc-cache -f
           pandoc --version | head -n 1

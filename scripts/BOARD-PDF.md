@@ -16,6 +16,6 @@
 
 打印建议：A4、实际大小 100%；双面选择长边翻转。目录中的页码是合集实际 PDF 页码，单篇文档保留自身页码。
 
-构建在 Ubuntu 24.04 上使用 apt 的 Pandoc / TeX Live，避免 `tlmgr` 的跨年度版本和镜像问题。依赖：`pandoc texlive-xetex texlive-lang-chinese texlive-latex-extra lmodern fonts-noto-cjk poppler-utils python3-pypdf python3-reportlab`，以及 Node.js。
+构建在 Ubuntu 24.04 上使用 apt 的 Pandoc / TeX Live，避免 `tlmgr` 的跨年度版本和镜像问题。依赖：`pandoc texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-fonts-recommended lmodern fonts-noto-cjk poppler-utils python3-pypdf python3-reportlab`，以及 Node.js。
 
 在仓库根目录运行：`bash scripts/build-board-pdfs.sh`。生成目录 `_site/` 已被 Git 忽略；PDF 不提交回笔记仓库，避免云同步重复增大仓库。
