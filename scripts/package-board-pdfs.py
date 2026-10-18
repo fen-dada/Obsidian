@@ -1,5 +1,6 @@
 """Verify every note, add a printable contents page, merge, and archive PDFs."""
 import json
+import io
 import subprocess
 import sys
 import tempfile
@@ -8,6 +9,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from pypdf import PdfReader, PdfWriter
+from reportlab.pdfgen import canvas
 
 
 def build(repo):
@@ -63,6 +65,21 @@ def build(repo):
             entry["start_page"] = page + 1
             writer.append(str(site / entry["path"]), outline_item=entry["title"], import_outline=False)
             page += entry["pages"]
+        # Replace each chapter's local footer with continuous printed page numbers.
+        total = len(writer.pages)
+        for number, pdf_page in enumerate(writer.pages, 1):
+            width = float(pdf_page.mediabox.width)
+            height = float(pdf_page.mediabox.height)
+            overlay = io.BytesIO()
+            stamp = canvas.Canvas(overlay, pagesize=(width, height))
+            stamp.setFillColorRGB(1, 1, 1)
+            stamp.rect(width / 2 - 55, 2, 110, 27, fill=1, stroke=0)
+            stamp.setFillColorRGB(0.25, 0.25, 0.25)
+            stamp.setFont("Helvetica", 9)
+            stamp.drawCentredString(width / 2, 15, f"{number} / {total}")
+            stamp.save()
+            overlay.seek(0)
+            pdf_page.merge_page(PdfReader(overlay).pages[0])
         writer.add_metadata({"/Title": "算法板子（打印合集）", "/Author": ""})
         writer.write(str(site / "board-all.pdf"))
         writer.close()
