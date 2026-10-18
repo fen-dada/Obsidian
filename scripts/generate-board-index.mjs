@@ -51,28 +51,40 @@ function renderDirectory(directory, relativeParts = []) {
 }
 
 const tree = renderDirectory(boardRoot);
+const navigation = [["/", "全部内容"], ["/projects/", "项目"], ["/essays/", "随笔"], ["/fiction/", "小说"], ["/Obsidian/", "算法板子"]];
 const html = `<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>算法板子 PDF</title>
+  <title>算法板子 - fen-dada</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/style.css">
   <style>
-    :root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans CJK SC", sans-serif; }
-    body { max-width: 920px; margin: 0 auto; padding: 32px 20px 64px; line-height: 1.65; }
-    h1 { margin-bottom: 0.25rem; }
-    p { color: #777; margin-top: 0; }
-    ul { list-style: none; margin: 0.3rem 0 0.3rem 0.9rem; padding-left: 0.8rem; border-left: 1px solid #9995; }
-    li { margin: 0.25rem 0; }
-    summary { cursor: pointer; font-weight: 650; }
-    a { color: #2878c8; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    .board-page h1 { margin-bottom: 0.25rem; }
+    .board-page p { color: var(--muted, #737984); margin-top: 0; }
+    .board-page ul { list-style: none; margin: 0.3rem 0 0.3rem 0.9rem; padding-left: 0.8rem; border-left: 1px solid #e9ebef; }
+    .board-page li { margin: 0.25rem 0; }
+    .board-page summary { cursor: pointer; font-weight: 550; }
+    .board-page a { color: var(--blue, #3666d6); text-decoration: none; overflow-wrap: anywhere; }
+    .board-page a:hover { text-decoration: underline; }
     .downloads { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0; }
     .downloads a { border: 1px solid #2878c8; border-radius: 6px; padding: 10px 16px; }
     .file::before { content: "PDF"; display: inline-block; margin-right: 0.55rem; padding: 0.05rem 0.3rem; border-radius: 0.25rem; background: #d33; color: white; font-size: 0.68rem; font-weight: 700; }
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <div class="site-layout">
+    <aside class="sidebar">
+      <a class="site-name" href="/" aria-label="fen-dada 首页"><span class="site-mark" aria-hidden="true">fd</span><span>fen-dada<small>个人记录</small></span></a>
+      <p class="nav-label">内容</p>
+      <nav aria-label="主导航">${navigation.map(([href, label]) => `<a href="${href}"${href === "/Obsidian/" ? ' aria-current="page"' : ""}><span>${label}</span></a>`).join("")}</nav>
+      <div class="sidebar-bottom"><a href="https://github.com/fen-dada">GitHub</a><a href="/admin/">管理</a></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><nav class="breadcrumb" aria-label="当前位置"><a href="/">fen-dada</a><span aria-hidden="true">/</span><span>算法板子</span></nav><a class="upload-button" href="/">返回主页</a></header>
+      <main id="main" class="board-page">
   <h1>算法板子 PDF</h1>
   <p>共 ${manifest.notes} 篇 · 合集 ${manifest.pages} 页 · A4 纵向 · 黑白打印 · 代码自动换行</p>
   <div class="downloads">
@@ -84,6 +96,10 @@ const html = `<!doctype html>
   <p>生成时间（香港时间）：${escapeHtml(builtAt)}</p>
   <p>目录和文件名与仓库中的“板子”文件夹保持一致。点击文件即可打开或下载最新 PDF。</p>
   ${tree}
+      </main>
+      <footer><span>fen-dada</span><span>个人记录</span><a href="/">返回主页</a></footer>
+    </div>
+  </div>
 </body>
 </html>
 `;
