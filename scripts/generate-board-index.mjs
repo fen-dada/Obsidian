@@ -3,6 +3,8 @@ import path from "node:path";
 
 const siteRoot = path.resolve(process.argv[2] ?? "_site");
 const boardRoot = path.join(siteRoot, "板子");
+const manifest = JSON.parse(fs.readFileSync(path.join(siteRoot, "manifest.json"), "utf8"));
+const builtAt = new Intl.DateTimeFormat("zh-CN", { timeZone: "Asia/Hong_Kong", dateStyle: "medium", timeStyle: "short" }).format(new Date(manifest.built_at));
 
 if (!fs.existsSync(boardRoot) || !fs.statSync(boardRoot).isDirectory()) {
   throw new Error(`PDF directory does not exist: ${boardRoot}`);
@@ -65,11 +67,21 @@ const html = `<!doctype html>
     summary { cursor: pointer; font-weight: 650; }
     a { color: #2878c8; text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .downloads { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0; }
+    .downloads a { border: 1px solid #2878c8; border-radius: 6px; padding: 10px 16px; }
     .file::before { content: "PDF"; display: inline-block; margin-right: 0.55rem; padding: 0.05rem 0.3rem; border-radius: 0.25rem; background: #d33; color: white; font-size: 0.68rem; font-weight: 700; }
   </style>
 </head>
 <body>
   <h1>算法板子 PDF</h1>
+  <p>共 ${manifest.notes} 篇 · 合集 ${manifest.pages} 页 · A4 纵向 · 黑白打印 · 代码自动换行</p>
+  <div class="downloads">
+    <a href="board-all.pdf">打开整本 PDF（含打印目录）</a>
+    <a href="board-all.pdf" download="算法板子-打印合集.pdf">下载整本 PDF</a>
+    <a href="board-pdfs.zip" download>下载全部 PDF 压缩包</a>
+  </div>
+  <p>打印时选择 A4、实际大小（100%）。需要双面打印时选择长边翻转。目录页码对应 PDF 页码。</p>
+  <p>生成时间（香港时间）：${escapeHtml(builtAt)}</p>
   <p>目录和文件名与仓库中的“板子”文件夹保持一致。点击文件即可打开或下载最新 PDF。</p>
   ${tree}
 </body>

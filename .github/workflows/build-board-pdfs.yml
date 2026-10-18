@@ -2,88 +2,73 @@ name: Build and deploy board PDFs
 
 on:
   push:
-    branches:
-      - main
-    paths:
-      - "板子/**"
-      - "scripts/build-board-pdfs.sh"
-      - "scripts/prepare-markdown.mjs"
-      - "scripts/generate-board-index.mjs"
-      - "scripts/pdf-header.tex"
-      - ".github/workflows/build-board-pdfs.yml"
+    branches: [main]
+    paths: ["板子/**", "scripts/**", ".github/workflows/build-board-pdfs.yml"]
+  pull_request:
+    paths: ["板子/**", "scripts/**", ".github/workflows/build-board-pdfs.yml"]
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: github-pages
+  group: board-pdfs-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    timeout-minutes: 25
-    container:
-      image: pandoc/latex:3.10-ubuntu
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    defaults:
-      run:
-        shell: bash
-
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
 
+      # Use one distribution's TeX packages, without the rolling tlmgr mirror.
       - name: Install PDF tools and Chinese fonts
         run: |
-          apt-get update
-          env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-            nodejs \
-            fonts-noto-cjk \
-            poppler-utils
+          sudo apt-get update
+          sudo env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+            pandoc texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-fonts-recommended \
+            lmodern fonts-noto-cjk poppler-utils python3-pypdf python3-reportlab
           fc-cache -f
+          pandoc --version | head -n 1
+          xelatex --version | head -n 1
 
-          tex_log=$(mktemp)
-          if ! {
-            tlmgr update --self
-            tlmgr install xecjk fvextra
-          } >"$tex_log" 2>&1; then
-            tex_error=$(tail -n 20 "$tex_log" | tr '\n' ' ' | cut -c1-1800)
-            tex_error="${tex_error//'%'/'%25'}"
-            echo "::error title=TeX package installation failed::$tex_error"
-            cat "$tex_log" >&2
-            rm -f -- "$tex_log"
-            exit 1
-          fi
-          cat "$tex_log"
-          rm -f -- "$tex_log"
-
-      - name: Build PDFs
+      - name: Build and verify printable PDFs
         run: bash scripts/build-board-pdfs.sh
 
-      - name: Verify generated PDFs
-        run: |
-          markdown_count=$(find "板子" -type f -name '*.md' | wc -l)
-          pdf_count=$(find "_site/板子" -type f -name '*.pdf' | wc -l)
-          test "$markdown_count" -eq "$pdf_count"
-
-          while IFS= read -r -d '' pdf; do
-            pdfinfo "$pdf" >/dev/null
-          done < <(find "_site/板子" -type f -name '*.pdf' -print0)
-
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
+      # Downloads remain available even when Pages deployment fails.
+      - name: Save printable PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: board-pdfs
+          path: _site
+          if-no-files-found: error
+          retention-days: 30
 
       - name: Upload GitHub Pages artifact
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v4
         with:
           path: _site
 
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: github-pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
