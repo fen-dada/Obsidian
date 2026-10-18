@@ -9,5 +9,5 @@ variables:
   geometry: margin=1.45cm
   mainfont: Latin Modern Roman
   sansfont: Latin Modern Sans
-  monofont: Latin Modern Mono
+  monofont: Noto Sans Mono CJK SC
   CJKmainfont: Noto Serif CJK SC
