@@ -60,6 +60,11 @@ while IFS= read -r -d '' markdown_file; do
   fi
 
   cat "$conversion_log"
+  if grep -q 'Missing character:' "$conversion_log"; then
+    echo "::error file=板子/$relative_path::PDF has missing glyphs; fix font coverage before publishing."
+    rm -f -- "$conversion_log"
+    exit 1
+  fi
   rm -f -- "$conversion_log"
   pdfinfo "$output_pdf" >/dev/null
 

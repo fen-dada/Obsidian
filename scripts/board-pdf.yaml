@@ -1,4 +1,4 @@
-from: markdown+tex_math_dollars+raw_tex+fenced_code_attributes
+from: markdown+tex_math_dollars+raw_tex+fenced_code_attributes-superscript-subscript
 pdf-engine: xelatex
 highlight-style: monochrome
 metadata:
@@ -7,7 +7,7 @@ variables:
   papersize: a4
   fontsize: 10pt
   geometry: margin=1.45cm
-  mainfont: Noto Serif CJK SC
-  sansfont: Noto Sans CJK SC
-  monofont: Noto Sans Mono CJK SC
+  mainfont: Latin Modern Roman
+  sansfont: Latin Modern Sans
+  monofont: Latin Modern Mono
   CJKmainfont: Noto Serif CJK SC

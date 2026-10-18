@@ -4,6 +4,7 @@ import path from "node:path";
 const siteRoot = path.resolve(process.argv[2] ?? "_site");
 const boardRoot = path.join(siteRoot, "板子");
 const manifest = JSON.parse(fs.readFileSync(path.join(siteRoot, "manifest.json"), "utf8"));
+const builtAt = new Intl.DateTimeFormat("zh-CN", { timeZone: "Asia/Hong_Kong", dateStyle: "medium", timeStyle: "short" }).format(new Date(manifest.built_at));
 
 if (!fs.existsSync(boardRoot) || !fs.statSync(boardRoot).isDirectory()) {
   throw new Error(`PDF directory does not exist: ${boardRoot}`);
@@ -80,7 +81,7 @@ const html = `<!doctype html>
     <a href="board-pdfs.zip" download>下载全部 PDF 压缩包</a>
   </div>
   <p>打印时选择 A4、实际大小（100%）。需要双面打印时选择长边翻转。目录页码对应 PDF 页码。</p>
-  <p>生成时间（UTC）：${escapeHtml(manifest.built_at)}</p>
+  <p>生成时间（香港时间）：${escapeHtml(builtAt)}</p>
   <p>目录和文件名与仓库中的“板子”文件夹保持一致。点击文件即可打开或下载最新 PDF。</p>
   ${tree}
 </body>
