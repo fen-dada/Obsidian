@@ -51,7 +51,17 @@ function renderDirectory(directory, relativeParts = []) {
 }
 
 const tree = renderDirectory(boardRoot);
-const navigation = [["/", "全部内容"], ["/projects/", "项目"], ["/essays/", "随笔"], ["/fiction/", "小说"], ["/Obsidian/", "算法板子"]];
+const icons = {
+  grid: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
+  folder: '<path d="M3 7V5a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/><path d="M3 9h18"/>',
+  file: '<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Zm0 0v6h6M8 13h8M8 17h5"/>',
+  book: '<path d="M12 5v16M3 3c4-1 7 0 9 2 2-2 5-3 9-2v16c-4-1-7 0-9 2-2-2-5-3-9-2Z"/>',
+  code: '<path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"/>',
+  arrow: '<path d="M7 17 17 7M7 7h10v10"/>',
+  settings: '<path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3" fill="currentColor" stroke="none"/><circle cx="15" cy="17" r="3" fill="currentColor" stroke="none"/>',
+};
+const icon = name => `<svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[name]}</svg>`;
+const navigation = [["/", "全部内容", "grid"], ["/projects/", "项目", "folder"], ["/essays/", "随笔", "file"], ["/fiction/", "小说", "book"], ["/Obsidian/", "算法板子", "code"]];
 const html = `<!doctype html>
 <html lang="zh-CN">
 <head>
@@ -60,6 +70,7 @@ const html = `<!doctype html>
   <title>算法板子 - fen-dada</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/style.css">
+  <script defer src="/board-sidebar.js"></script>
   <style>
     .board-page h1 { margin-bottom: 0.25rem; }
     .board-page p { color: var(--muted, #737984); margin-top: 0; }
@@ -79,8 +90,8 @@ const html = `<!doctype html>
     <aside class="sidebar">
       <a class="site-name" href="/" aria-label="fen-dada 首页"><span class="site-mark" aria-hidden="true">fd</span><span>fen-dada<small>个人记录</small></span></a>
       <p class="nav-label">内容</p>
-      <nav aria-label="主导航">${navigation.map(([href, label]) => `<a href="${href}"${href === "/Obsidian/" ? ' aria-current="page"' : ""}><span>${label}</span></a>`).join("")}</nav>
-      <div class="sidebar-bottom"><a href="https://github.com/fen-dada">GitHub</a><a href="/admin/">管理</a></div>
+      <nav aria-label="主导航">${navigation.map(([href, label, symbol]) => `<a href="${href}"${href === "/Obsidian/" ? ' aria-current="page"' : ""}>${icon(symbol)}<span>${label}</span></a>`).join("")}</nav>
+      <div class="sidebar-bottom"><a href="https://github.com/fen-dada">${icon("arrow")}<span>GitHub</span></a><a href="/admin/">${icon("settings")}<span>管理</span></a></div>
     </aside>
     <div class="workspace">
       <header class="topbar"><nav class="breadcrumb" aria-label="当前位置"><a href="/">fen-dada</a><span aria-hidden="true">/</span><span>算法板子</span></nav><a class="upload-button" href="/">返回主页</a></header>
