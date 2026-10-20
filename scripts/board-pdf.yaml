@@ -1,6 +1,6 @@
 from: markdown+tex_math_dollars+raw_tex+fenced_code_attributes-superscript-subscript
 pdf-engine: xelatex
-highlight-style: monochrome
+highlight-style: tango
 metadata:
   lang: zh-CN
 variables:

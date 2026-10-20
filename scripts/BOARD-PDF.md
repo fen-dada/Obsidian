@@ -3,7 +3,7 @@
 下载入口：https://fen-dada.github.io/Obsidian/
 
 只转换 `板子/` 中的 Markdown，不读取 `algorithm-template/`，不修改两边笔记。
-保留目录结构；空笔记生成标题页，避免漏文件。代码使用黑白语法高亮并自动换行，公式用 XeLaTeX 排版，中文字体嵌入 PDF。
+保留目录结构；空笔记生成标题页，避免漏文件。代码使用 Tango 彩色语法高亮并自动换行，公式用 XeLaTeX 排版，中文字体嵌入 PDF。
 
 同步 `板子/` 到 GitHub `main` 后，Actions 自动重新构建。也可在 Actions 中选择 **Build and deploy board PDFs → Run workflow** 手动生成。
 

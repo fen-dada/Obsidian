@@ -97,7 +97,7 @@ const html = `<!doctype html>
       <header class="topbar"><nav class="breadcrumb" aria-label="当前位置"><a href="/">fen-dada</a><span aria-hidden="true">/</span><span>算法板子</span></nav><a class="upload-button" href="/">返回主页</a></header>
       <main id="main" class="board-page">
   <h1>算法板子 PDF</h1>
-  <p>共 ${manifest.notes} 篇 · 合集 ${manifest.pages} 页 · A4 纵向 · 黑白打印 · 代码自动换行</p>
+  <p>共 ${manifest.notes} 篇 · 合集 ${manifest.pages} 页 · A4 纵向 · 代码彩色高亮 · 代码自动换行</p>
   <div class="downloads">
     <a href="board-all.pdf">打开整本 PDF（含打印目录）</a>
     <a href="board-all.pdf" download="算法板子-打印合集.pdf">下载整本 PDF</a>
