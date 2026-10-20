@@ -9,5 +9,7 @@ variables:
   geometry: margin=1.45cm
   mainfont: Latin Modern Roman
   sansfont: Latin Modern Sans
-  monofont: Noto Sans Mono CJK SC
+  monofont: FiraCode Nerd Font
+  monofontoptions:
+    - AutoFakeSlant=0.2
   CJKmainfont: Noto Serif CJK SC

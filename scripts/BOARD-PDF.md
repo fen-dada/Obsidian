@@ -3,7 +3,7 @@
 下载入口：https://fen-dada.github.io/Obsidian/
 
 只转换 `板子/` 中的 Markdown，不读取 `algorithm-template/`，不修改两边笔记。
-保留目录结构；空笔记生成标题页，避免漏文件。代码使用 Tango 彩色语法高亮并自动换行，公式用 XeLaTeX 排版，中文字体嵌入 PDF。
+保留目录结构；空笔记生成标题页，避免漏文件。代码使用 FiraCode Nerd Font 字体、Tango 彩色语法高亮并自动换行，中文注释使用 Noto Sans Mono CJK SC。公式用 XeLaTeX 排版，字体嵌入 PDF。
 
 同步 `板子/` 到 GitHub `main` 后，Actions 自动重新构建。也可在 Actions 中选择 **Build and deploy board PDFs → Run workflow** 手动生成。
 
@@ -18,4 +18,4 @@
 
 构建在 Ubuntu 24.04 上使用 apt 的 Pandoc / TeX Live，避免 `tlmgr` 的跨年度版本和镜像问题。依赖：`pandoc texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-fonts-recommended lmodern fonts-noto-cjk poppler-utils python3-pypdf python3-reportlab`，以及 Node.js。
 
-在仓库根目录运行：`bash scripts/build-board-pdfs.sh`。生成目录 `_site/` 已被 Git 忽略；PDF 不提交回笔记仓库，避免云同步重复增大仓库。
+在仓库根目录运行：`bash scripts/build-board-pdfs.sh`。本地构建前需安装 `scripts/fonts/` 中的字体（Actions 会自动安装）。生成目录 `_site/` 已被 Git 忽略；PDF 不提交回笔记仓库，避免云同步重复增大仓库。
