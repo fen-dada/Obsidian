@@ -1,15 +1,4 @@
-# z函数
-
-[左神原版 Java](https://github.com/algorithmzuo/algorithm-journey/blob/main/src/class103/Code02_ExpandKMP.java)，以下按原版直接翻译为 C++，保留全局数组和变量含义。
-
 ```cpp
-#include <bits/stdc++.h>
-using namespace std;
-
-const int MAXN = 20000001;
-int z[MAXN];
-int e[MAXN];
-
 void zArray(const string& s, int n) {
     z[0] = n;
     for (int i = 1, c = 1, r = 1, len; i < n; i++) {
@@ -37,30 +26,6 @@ void eArray(const string& a, const string& b, int n, int m) {
         }
         e[i] = len;
     }
-}
-
-// 洛谷 P5410 要求的数组权值：各项的异或和
-long long eor(const int arr[], int n) {
-    long long ans = 0;
-    for (int i = 0; i < n; i++) {
-        ans ^= 1LL * (i + 1) * (arr[i] + 1);
-    }
-    return ans;
-}
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
-    string a, b;
-    getline(cin, a);
-    getline(cin, b);
-
-    zArray(b, b.length());
-    eArray(a, b, a.length(), b.length());
-    cout << eor(z, b.length()) << '\n';
-    cout << eor(e, a.length()) << '\n';
-    return 0;
 }
 ```
 
